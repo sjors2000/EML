@@ -4,7 +4,7 @@ output: github_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## GitHub Documents
@@ -17,6 +17,16 @@ Normal *italic* **bold** text.
 
 - List
 - Another list
+```{r}
+library(tidyverse)
+library(spotifyr)
+source('spotify.R')
+```
+
+```{r}
+get_playlist_audio_features('spotify','37i9dQZF1DXcBWIGoYBM5M')
+```
+
 
 
 
